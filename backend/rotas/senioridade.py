@@ -64,4 +64,4 @@ def deletar_senioridade(id: int):
     except Exception as erro:
         conn.rollback()
         conn.close()
-        return {"erro": "Não foi possível excluir esta senioridade. Verifique se ela está sendo usada por algum tatuador."}
+        return {"erro": "Não foi possível excluir esta senioridade. Verifique se ela está sendo usada por algum tatuador."} 
