@@ -88,4 +88,4 @@ def deletar_tatuador(id: int):
     except Exception as erro:
         conn.rollback()
         conn.close()
-        return {"erro": "Não foi possível excluir este tatuador. Verifique se ele possui agendamentos ou estilos cadastrados."}
+        return {"erro": "Não foi possível excluir este tatuador. Verifique se ele possui agendamentos ou estilos cadastrados."} 
