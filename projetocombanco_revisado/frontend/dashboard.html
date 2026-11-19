@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Painel • Estúdio</title>
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/atelier.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="dashboard.html">Estúdio de Tatuagem</a
+        ><button data-logout class="btn btn-outline-light">Sair</button>
+      </div>
+    </nav>
+    <main class="container py-5">
+      <p class="text-primary fw-bold">PAINEL</p>
+      <h1 class="mb-4">O que você precisa gerenciar?</h1>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <a
+            class="card card-body h-100 text-decoration-none"
+            href="clientes.html"
+            ><h2 class="h5">Clientes</h2>
+            <span>Cadastros e contatos</span></a
+          >
+        </div>
+        <div class="col-md-4">
+          <a
+            class="card card-body h-100 text-decoration-none"
+            href="tatuadores.html"
+            ><h2 class="h5">Tatuadores</h2>
+            <span>Equipe e especialidades</span></a
+          >
+        </div>
+        <div class="col-md-4">
+          <a
+            class="card card-body h-100 text-decoration-none"
+            href="agendamentos.html"
+            ><h2 class="h5">Agendamentos</h2>
+            <span>Sessões e desenhos</span></a
+          >
+        </div>
+        <div class="col-md-4">
+          <a
+            class="card card-body h-100 text-decoration-none"
+            href="senioridade.html"
+            ><h2 class="h5">Senioridade</h2>
+            <span>Níveis da equipe</span></a
+          >
+        </div>
+        <div class="col-md-4">
+          <a
+            class="card card-body h-100 text-decoration-none"
+            href="estilos.html"
+            ><h2 class="h5">Estilos</h2>
+            <span>Catálogo de tatuagem</span></a
+          >
+        </div>
+        <div class="col-md-4" id="admin-card">
+          <a
+            class="card card-body h-100 text-decoration-none"
+            href="cadastro.html"
+            ><h2 class="h5">Usuários</h2>
+            <span>Criar contas de equipe</span></a
+          >
+        </div>
+      </div>
+      <p id="aviso" class="text-danger mt-3"></p>
+    </main>
+    <!-- Carrega os scripts compartilhados antes da lógica desta tela -->
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

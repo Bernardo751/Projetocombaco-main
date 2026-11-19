@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Entrar • Estúdio</title>
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/atelier.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <main
+      class="container min-vh-100 d-flex align-items-center justify-content-center"
+    >
+      <section class="card shadow-sm p-4" style="width: min(100%, 430px)">
+        <h1 class="h3 mb-1">Entrar</h1>
+        <p class="text-secondary">Acesse sua conta do estúdio.</p>
+        <p id="aviso" class="text-danger" role="alert"></p>
+        <!-- Formulário da funcionalidade desta página -->
+        <form id="form-login">
+          <label class="form-label" for="email">E-mail</label
+          ><input
+            class="form-control mb-3"
+            id="email"
+            type="email"
+            required
+          /><label class="form-label" for="senha">Senha</label
+          ><input
+            class="form-control mb-4"
+            id="senha"
+            type="password"
+            required
+          /><button type="submit" class="btn btn-primary w-100">Entrar</button>
+        </form>
+        <a class="mt-3" href="index.html">Voltar ao início</a>
+      </section>
+    </main>
+    <!-- Carrega os scripts compartilhados antes da lógica desta tela -->
+    <script src="js/api.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

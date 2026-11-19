@@ -1,0 +1,11 @@
+Página inicial e bloqueio de acesso sem sessão: OK
+Erro de senha, login e painel do administrador: OK
+Cadastro e edição de cliente pela tela: OK
+Cadastro, edição e limpeza dos formulários de senioridade e estilos: OK
+Tatuador, select de senioridade, JOIN e checkboxes N:N ao editar: OK
+Agendamento pendente, edição de status, valor zero, upload e miniatura: OK
+Mensagem de impedimento por chave estrangeira: OK
+Cadastro de equipe, logout e restrição real de funcionário (403): OK
+Exclusões dos cinco recursos pela interface após remover vínculos: OK
+Navegação entre todas as telas e bloqueio após logout: OK
+Erros JavaScript não tratados no navegador: 0

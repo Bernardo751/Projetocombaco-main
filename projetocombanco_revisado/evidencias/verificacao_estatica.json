@@ -1,0 +1,11 @@
+{
+  "resultado": "OK",
+  "funcoes_python_com_comentario": 59,
+  "arquivos_js": 11,
+  "paginas_html": 9,
+  "aulas_consultadas": 17,
+  "tabelas_com_pk_inline": 7,
+  "sql_inicial_local_e_mysql_iguais": true,
+  "excecao_init": "arquivo vazio conforme aula 5",
+  "erros": []
+}

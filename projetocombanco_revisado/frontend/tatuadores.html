@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tatuadores • Estúdio</title>
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/atelier.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="dashboard.html">Estúdio</a>
+        <div>
+          <a class="btn btn-sm btn-outline-light" href="dashboard.html"
+            >Painel</a
+          >
+          <a class="btn btn-sm btn-outline-light" href="clientes.html"
+            >Clientes</a
+          >
+          <a class="btn btn-sm btn-outline-light" href="senioridade.html"
+            >Senioridade</a
+          >
+          <a class="btn btn-sm btn-outline-light" href="estilos.html"
+            >Estilos</a
+          >
+          <a class="btn btn-sm btn-outline-light" href="tatuadores.html"
+            >Tatuadores</a
+          >
+          <a class="btn btn-sm btn-outline-light" href="agendamentos.html"
+            >Agendamentos</a
+          >
+          <button data-logout class="btn btn-sm btn-outline-light">Sair</button>
+        </div>
+      </div>
+    </nav>
+    <main class="container py-4">
+      <h1>Tatuadores</h1>
+      <p id="aviso" class="text-danger" role="alert"></p>
+      <!-- Formulário da funcionalidade desta página -->
+      <form id="form" class="row g-2 mb-4">
+        <input
+          id="nometatuador"
+          class="form-control"
+          placeholder="Nome"
+          required
+        /><input
+          id="cpf"
+          class="form-control"
+          placeholder="CPF (11 números)"
+          pattern="[0-9]{11}"
+          required
+        /><input
+          id="email"
+          class="form-control"
+          type="email"
+          placeholder="E-mail"
+        /><input
+          id="telefone"
+          class="form-control"
+          placeholder="Telefone"
+        /><label
+          >Data de contratação<input
+            id="datacontratacao"
+            class="form-control"
+            type="date" /></label
+        ><label
+          >Senioridade<select
+            id="idsenioridade"
+            class="form-select"
+            required
+          ></select
+        ></label>
+        <fieldset>
+          <legend class="fs-6">Estilos dominados</legend>
+          <div id="lista-estilos" class="d-flex gap-3 flex-wrap"></div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Salvar tatuador</button
+        ><button id="cancelar" type="button" class="btn btn-secondary" hidden>
+          Cancelar edição
+        </button>
+      </form>
+      <div class="table-responsive">
+        <!-- A tabela é preenchida pelas chamadas Fetch à API -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>E-mail</th>
+              <th>Telefone</th>
+              <th>Senioridade</th>
+              <th>Estilos</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="linhas"></tbody>
+        </table>
+      </div>
+    </main>
+    <!-- Carrega os scripts compartilhados antes da lógica desta tela -->
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/tatuadores.js"></script>
+  </body>
+</html>

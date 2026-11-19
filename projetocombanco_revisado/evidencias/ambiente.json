@@ -1,0 +1,23 @@
+{
+  "data_revisao": "2026-10-21",
+  "python": "3.12.14",
+  "sistema": "Linux",
+  "banco": "MariaDB 10.11.14",
+  "modo_sql": "STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION,ONLY_FULL_GROUP_BY",
+  "navegador": "Chromium 134.0.6998.35",
+  "pacotes": {
+    "fastapi": "0.159.0",
+    "starlette": "1.9.0",
+    "mysql-connector-python": "9.7.0",
+    "bcrypt": "5.0.0",
+    "PyJWT": "2.15.1",
+    "pytest": "9.1.1",
+    "httpx": "0.28.1",
+    "playwright": "1.51.0"
+  },
+  "limites": [
+    "Aiven/MySQL remoto não executado",
+    "Windows da cópia revisada não executado",
+    "Backup atual do aluno e GitHub pessoal não acessados"
+  ]
+}
